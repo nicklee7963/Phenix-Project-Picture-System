@@ -28,4 +28,5 @@ docker run -it \
 	2. `camera_server`(server): subscriber to `/camera/image_raw` save image
 	- `ros2 run camera_snapshot_pkg server`
 	3. `camera_client`(client): wait for user to click enter
+	- `ros2 run camera_snapshot_pkg client`
 
