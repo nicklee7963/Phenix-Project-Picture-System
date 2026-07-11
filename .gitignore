@@ -1,0 +1,21 @@
+# ROS2 Build/Log/Install directories
+build/
+install/
+log/
+.colcon/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System and Editor files
+.vscode/
+.DS_Store
+*.swp
+
+# Image files
+*.jpg
+*.png
+
+# Core dumps (你目錄下那些 core.xxx 檔案)
+core.*
