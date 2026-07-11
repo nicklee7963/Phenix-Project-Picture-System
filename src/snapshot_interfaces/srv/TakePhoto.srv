@@ -1,0 +1,7 @@
+string label
+---
+bool success 
+string filepath
+int32 width
+int32 height
+

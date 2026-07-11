@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'camera_trigger_pkg'
+package_name = 'camera_snapshot_pkg'
 
 setup(
     name=package_name,
@@ -24,8 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'camera_server = camera_trigger_pkg.camera_server:main',
-            'keyboard_client = camera_trigger_pkg.keyboard_client:main',
+            'server=camera_snapshot_pkg.camera_server:main',
+            'client=camera_snapshot_pkg.camera_client:main',
         ],
     },
 )
