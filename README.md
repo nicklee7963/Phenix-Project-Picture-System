@@ -30,3 +30,23 @@ docker run -it \
 	3. `camera_client`(client): wait for user to click enter
 	- `ros2 run camera_snapshot_pkg client`
 
+
+## 2026/07/15: camera node to be detected outside docker (ubuntu desktop(WSL) connect to rpi docker )
+**solution:** Use `mirror` in wsl system.
+**result:** WSL IP is the same as windows system.
+**conssequence:** Change WIFI will crash.
+```python
+# stage 1: 
+ros2 daemon stop
+# stage 2: change wifi
+# stage 3: 
+sudo rm -rf /dev/shm/*
+ros2 daemon start
+```
+**RESCUE COMMAND**
+```python
+pkill -9 -f ros2
+sudo rm -rf /dev/shm/*
+rm -rf ~/.ros/ros2_daemon*
+ros2 daemon start
+```
