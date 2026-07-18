@@ -19,3 +19,4 @@ __pycache__/
 
 # Core dumps (你目錄下那些 core.xxx 檔案)
 core.*
+picamera2/
